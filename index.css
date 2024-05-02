@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* color: #fff; */
+  background: linear-gradient(135deg, #8b017b, #8e03a3);
+}
+.heading {
+  margin: 10px auto;
+  margin-top: 8.4rem;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.container {
+  border: 3px solid rgb(106, 5, 143);
+  width: 38%;
+  margin: 39px auto;
+  border-radius: 6px;
+  background-color: white;
+  padding: 22px 26px;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #420260;
+}
+
+#new-task-form {
+  display: flex;
+  gap: 12px;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  width: 60%;
+  height: 45px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 8px;
+  color: #370150;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+#new-task-input:focus,
+#new-task-input:valid {
+  border-color: #8a29b1;
+}
+
+#new-task-submit {
+  font-size: 2.25rem;
+  font-weight: 700;
+  /* background: blueviolet; */
+  background: #89089d;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 52px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 32px 0px;
+  padding-bottom: 0px;
+}
+
+.task-list h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  color: #240134;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0px;
+  border-radius: 1rem;
+}
+
+.task .content {
+  flex: 1 1 0%;
+  color: #370150;
+  background-color: rgb(244, 230, 247);
+}
+
+.task .content .text {
+  font-size: 1.4rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+  height: 34px;
+  padding-left: 8px;
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  /* font-size: 1.125rem; */
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 16px;
+  height: 35px;
+  width: 60px;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  background: #89089d;
+}
+
+.task .actions .delete {
+  color: crimson;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 60%;
+    padding: 10px;
+  }
+}
